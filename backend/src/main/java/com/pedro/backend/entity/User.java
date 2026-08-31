@@ -18,15 +18,15 @@ public class User extends BaseEntity {
     private String email;
 
     @Column(nullable = false, length = 255)
-    private String passworHash;
+    private String passwordHash;
 
     public User() {
     }
 
-    public User(String name, String email, String passworHash) {
+    public User(String name, String email, String passwordHash) {
         this.name = name;
         this.email = email;
-        this.passworHash = passworHash;
+        this.passwordHash = passwordHash;
     }
 
     public UUID getId() {
